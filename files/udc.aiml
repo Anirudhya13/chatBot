@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+  <category>
+      <pattern>Hello Bot</pattern>
+      <template>Hello World</template>
+  </category>
+  <category>
+      <pattern>My Name Is * *</pattern>
+      <template>
+          Hello <star index="1"/>How are you Mr <star index="2"/>?
+      </template>
+  </category>
+  <category>
+      <pattern>Hello *</pattern>
+      <template>
+          Hello User
+      </template>
+  </category>
+   <category>
+      <pattern>Say *</pattern>
+      <template>
+          <star />
+      </template>
+  </category>
+</aiml>
